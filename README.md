@@ -20,7 +20,7 @@ Well installing ncurses library is an easy task, you just have to follow the ste
 ### Installing ncurses on Mac OS X
 1. Install [Homebrew](http://brew.sh/) (if not already):
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-2. Install ncurses package: `$brew install homebrew/dupes/ncurses`
+2. Install ncurses package: `$brew install ncurses`
 
 
 ## Installation
