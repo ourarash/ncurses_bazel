@@ -1,5 +1,6 @@
-# A Handy Ncurses Cheatsheet
-A handy cheatsheet for programmers working with [ncurses library by GNU](https://www.gnu.org/software/ncurses/). Complete and documentation and usage details. This is a reference doc which will help you in the process of building up great interactive command line projects using the ncurses library by GNU.
+# Ncurses Cheatsheet
+A cheatsheet for programmers working with [ncurses library by GNU](https://www.gnu.org/software/ncurses/). 
+Complete and documentation and usage details. This is a reference doc which will help you in the process of building up great interactive command line projects using the ncurses library by GNU.
 
 
 ## Initialization Functions
