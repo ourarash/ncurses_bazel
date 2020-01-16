@@ -46,8 +46,8 @@ You can run unit tests using [`blaze`](installing-bazel):
 ```bash
 bazel test tests:tests
 ```
-## ncurses Cheatsheet
-[HERE](https://github.com/ourarash/ncurses-cheatsheet/blob/master/cheatsheet.md)
+## Ncurses Cheatsheet
+You can see a quick reference of ncurses APIs [HERE](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/README.md)
 
 ## Installing Bazel
 
