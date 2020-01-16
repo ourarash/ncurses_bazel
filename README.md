@@ -2,9 +2,9 @@
 
 > Can be used in Visual Studio Code
 
-This is a starter template for building C++ binaries using ncurses library.
+This is a starter template for building C++ binaries using ncurses library and [Bazel](https://www.bazel.build/) build system.
 
-[ncurses](http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html) (new curses) is a programming library providing a set of APIs that allows the programmer to write text-based user interfaces in a terminal-independent manner. It is a toolkit for developing "GUI-like" application software that runs under a terminal emulator. It also optimizes screen changes, in order to reduce the latency experienced when using remote shells.
+[ncurses](http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html) (new curses) is a  library providing a set of APIs that allows the programmer to write text-based user interfaces in a terminal-independent manner. It is a toolkit for developing "GUI-like" application software that runs under a terminal emulator. It also optimizes screen changes, in order to reduce the latency experienced when using remote shells.
 
 ## Screenshot
 
@@ -17,7 +17,6 @@ You can copy this using this command:
 ```bash
 git clone https://github.com/ourarash/cpp-template.git
 ```
-
 
 ### Run main:
 
