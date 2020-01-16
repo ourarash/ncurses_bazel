@@ -6,6 +6,10 @@ This is a starter template for building C++ binaries using ncurses library.
 
 [ncurses](http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html) (new curses) is a programming library providing a set of APIs that allows the programmer to write text-based user interfaces in a terminal-independent manner. It is a toolkit for developing "GUI-like" application software that runs under a terminal emulator. It also optimizes screen changes, in order to reduce the latency experienced when using remote shells.
 
+## Screenshot
+
+<img alt="Screenshot" src="https://raw.githubusercontent.com/ourarash/ncurses_hello_world/master/screenshot.gif" width="200">
+
 ## Installation
 
 You can copy this using this command:
@@ -13,6 +17,7 @@ You can copy this using this command:
 ```bash
 git clone https://github.com/ourarash/cpp-template.git
 ```
+
 
 ### Run main:
 
@@ -29,10 +34,6 @@ You can run unit tests using [`blaze`](installing-bazel):
 ```bash
 bazel test tests:tests
 ```
-
-## Directory Structure
-
-<img alt="Directory Structure" src="https://github.com/ourarash/cpp-template/blob/master/tree.png?raw=true" width="200">
 
 ## Installing Bazel
 
