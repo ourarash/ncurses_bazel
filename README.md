@@ -25,7 +25,7 @@ Well installing ncurses library is an easy task, you just have to follow the ste
 
 ## Installation
 
-You can copy this using this command:
+You can clone this repo using this command:
 
 ```bash
 git clone https://github.com/ourarash/cpp-template.git
@@ -47,7 +47,7 @@ You can run unit tests using [`blaze`](installing-bazel):
 bazel test tests:tests
 ```
 ## Ncurses Cheatsheet
-You can see a quick reference of ncurses APIs [HERE](https://github.com/hereisnaman/ncurses-cheatsheet/blob/master/README.md)
+You can see a quick reference of ncurses APIs [HERE](https://github.com/ourarash/ncurses_bazel/blob/master/cheatsheet.md)
 
 ## Installing Bazel
 
