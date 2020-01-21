@@ -104,6 +104,35 @@ Solution::Solution() {
 
 std::string Solution::GetHelloWorld() { return "**** Hello World ****"; }
 
+void Solution::drawcircle(int i0, int j0, int radius) {
+  int i = radius;
+  int j = 0;
+  int err = 0;
+
+  std::string c = "X";
+  int k = 0;
+  while (i >= j) {
+    putpixel(i0 + i, j0 + j, c);
+    putpixel(i0 + j, j0 + i + k, c);
+    putpixel(i0 - j, j0 + i + k, c);
+    putpixel(i0 - i, j0 + j + k, c);
+    putpixel(i0 - i, j0 - j + k, c);
+    putpixel(i0 - j, j0 - i + k, c);
+    putpixel(i0 + j, j0 - i + k, c);
+    putpixel(i0 + i, j0 - j + k, c);
+
+    if (err <= 0) {
+      j += 1;
+      err += 2 * j + 1;
+    }
+
+    if (err > 0) {
+      i -= 1;
+      err -= 2 * i + 1;
+    }
+  }
+}
+
 bool Solution::DrawLine(const int i0, const int j0, const int i1, const int j1,
                         const std::string &str) const {
 

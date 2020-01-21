@@ -28,6 +28,7 @@ public:
   Solution();
 
   std::string GetHelloWorld();
+  void drawcircle(int i0, int j0, int radius);
   bool DrawLine(const Point &start, const Point &end,
                 const std::string &str) const;
 

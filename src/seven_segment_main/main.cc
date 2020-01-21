@@ -25,18 +25,18 @@ int main() {
   int name_offset = 20;
   int name_y = 15;
   std::string my_text = "ARASH";
-  solution.PrintStringOnSevenSegment(15, 0, 10, 12, 4, my_text, str);
+  solution.PrintStringOnSevenSegment(15, 24, 10, 12, 4, my_text, str);
 
   int i = 0;
   while (true) {
     auto now = std::chrono::system_clock::now();
-    auto in_time_t = std::chrono::system_clock::to_time_t(now);
+    auto now_in_time_t = std::chrono::system_clock::to_time_t(now);
 
     std::stringstream hour, min, seconds, time;
-    hour << std::put_time(std::localtime(&in_time_t), "%H");
-    min << std::put_time(std::localtime(&in_time_t), "%M:");
-    seconds << std::put_time(std::localtime(&in_time_t), "%S");
-    time << std::put_time(std::localtime(&in_time_t), "%H:%M:%S");
+    hour << std::put_time(std::localtime(&now_in_time_t), "%H");
+    min << std::put_time(std::localtime(&now_in_time_t), "%M:");
+    seconds << std::put_time(std::localtime(&now_in_time_t), "%S");
+    time << std::put_time(std::localtime(&now_in_time_t), "%H:%M:%S");
 
     mvwprintw(stdscr, 0, 0, "%s", time.str().c_str());
 
@@ -60,6 +60,7 @@ int main() {
                               solution.char_map_[min.str()[0]], str);
     solution.DrawSevenSegment(1, 14 * 4, 10, 10,
                               solution.char_map_[min.str()[1]], str);
+
     if ((seconds.str()[1] - '0') % 2 == 1) {
 
       solution.DrawSevenSegment(1, 14 * 5, 10, 10, solution.char_map_[':'],
@@ -72,14 +73,10 @@ int main() {
 
     solution.DrawSevenSegment(1, 14 * 6, 10, 10,
                               solution.char_map_[seconds.str()[0]], str);
-    // solution.DrawSevenSegment(1, 14 * 7, 10, 10,
-    //                           solution.char_map_[seconds.str()[1]],
-    //                           seconds.str()[1]);
+    solution.DrawSevenSegment(1, 14 * 7, 10, 10,
+                              solution.char_map_[seconds.str()[1]], str);
     usleep(1000 * 50); // Sleep for 100 ms
   }
-  refresh();
-  getch();  // Wait for user input
-  endwin(); // End curses mode
 
   return EXIT_SUCCESS;
 }
