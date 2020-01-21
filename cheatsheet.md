@@ -5,9 +5,9 @@ Complete and documentation and usage details. This is a reference doc which will
 
 ## Initialization Functions
 
-|Functions|Discription|
+|Functions|Description|
 |-------------|-------------|
-|initscr()|Initializes the terminal in cursor mode. It must be called first to do any manupulation with ncurses package.|
+|initscr()|Initializes the terminal in cursor mode. It must be called first to do any manipulation with ncurses package.|
 |refresh()|Tell the curses system to dump the contents on the screen. It checks the window and updates only the portion which has been changed.|
 |wrefresh()|Tell the curses system to dump the contents on the given window. It checks the given window and updates only the portion which has been changed.|
 |endwin()|Ends the terminal cursor mode.|
@@ -15,7 +15,7 @@ Complete and documentation and usage details. This is a reference doc which will
 |cbreak()|Disable inline buffering. Control characters are interpreted as any other character by the terminal driver.|
 |echo()|Switch on echo.|
 |noecho()|Switch off echo.|
-|keypad(stdscr,TRUE)|Enable reading of fucntion keys.|
+|keypad(stdscr,TRUE)|Enable reading of function keys.|
 |halfdelay()|Enable the half−delay mode, it waits for 'X' tenths of a second for input and then returns ERR, if no input is available|
 
 ## Miscellaneous Functions
