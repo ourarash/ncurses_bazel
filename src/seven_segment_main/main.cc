@@ -24,7 +24,7 @@ int main() {
   attron(A_BOLD);
   int name_offset = 20;
   int name_y = 15;
-  std::string my_text = "ARASH";
+  std::string my_text = "HELLO";
   solution.PrintStringOnSevenSegment(15, 24, 10, 12, 4, my_text, str);
 
   int i = 0;
