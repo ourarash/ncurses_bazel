@@ -1,14 +1,14 @@
-#include "src/lib/solution.h"
+#include "src/lib/ncurses_wrapper.h"
 #include <iostream>
 #include <ncurses.h>
 #include <string>
 #include <unistd.h>
 
 int main() {
-  Solution solution;
+  NCursesWrapper ncurses_wrapper;
 
   initscr();
-  solution.drawcircle(10, 20, 5);
+  ncurses_wrapper.drawcircle(10, 20, 5);
   refresh(); // Print it on to the real screen
   getch();   // Wait for user input
   endwin();

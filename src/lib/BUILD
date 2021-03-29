@@ -1,7 +1,14 @@
-# https://docs.bazel.build/versions/master/be/c-cpp.html#cc_library
+cc_library(
+    name = "NCursesLib",
+    srcs = ["ncurses_wrapper.cc"],
+    hdrs = ["ncurses_wrapper.h"],
+    visibility = ["//visibility:public"],
+    deps = ["@ncurses//:main"]
+)
+
 cc_library(
     name = "SolutionLib",
-    srcs = glob(["**/*.cc"]),
-    hdrs = glob(["**/*.h"]),
+    srcs = ["solution.cc"],
+    hdrs = ["solution.h"],
     visibility = ["//visibility:public"],
 )

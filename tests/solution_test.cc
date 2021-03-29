@@ -4,7 +4,7 @@
 
 TEST(HelloWorldShould, ReturnHelloWorld) {
   Solution solution;
-  std::string actual = solution.PrintHelloWorld();
+  std::string actual = solution.GetHelloWorld();
   std::string expected = "**** Hello World ****";
   EXPECT_EQ(expected, actual);
 }

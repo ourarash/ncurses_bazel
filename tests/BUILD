@@ -4,5 +4,6 @@ cc_test(
     deps = [
         "//src/lib:SolutionLib",
         "@googletest//:gtest_main",
+        "@ncurses//:main"
     ],
 )

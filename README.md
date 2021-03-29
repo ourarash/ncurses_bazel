@@ -53,7 +53,3 @@ You can see a quick reference of ncurses APIs [HERE](https://github.com/ourarash
 
 This repo uses `Bazel` for building C++ files.
 You can install Bazel using this [link](https://docs.bazel.build/versions/master/install.html).
-
-### Credit
-
-This repo was inspired by [this post](https://www.ratanparai.com/c++/writing-unit-tests-with-bazel/).

@@ -2,5 +2,5 @@
 cc_binary(
     name = "main",
     srcs = ["main.cc"],
-    deps = ["//src/lib:SolutionLib", "@ncurses//:main"],
+    deps = ["//src/lib:NCursesLib", "@ncurses//:main"],
 )
