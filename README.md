@@ -31,6 +31,12 @@ You can clone this repo using this command:
 git clone https://github.com/ourarash/cpp-template.git
 ```
 
+## Ubuntu Specific
+If you are running on ubuntu, first copy the files in [ubuntu](ubuntu) folder int to the root of this repo:
+```bash
+cp ubuntu/* ./
+```
+
 ### Run main:
 
 You can run this using `blaze`:

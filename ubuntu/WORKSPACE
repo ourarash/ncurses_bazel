@@ -8,6 +8,6 @@ git_repository(
 
 new_local_repository(
     name = "ncurses",
-    path = "/usr/", # install with homebrew
+    path = "/usr/", # Use this for Ubuntu
     build_file = "ncurses.BUILD",
 )
